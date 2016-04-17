@@ -5,7 +5,7 @@ Generates a request for tracking pixel with required paramaters;
 */
 function sendError(errorObject, collectorUrl){
   var errorString = Object.keys(errorObject).map(function(key) {
-  return key + '=' + errorObject[key];
+  return key + '=' + encodeURIComponent(errorObject[key]);
   }).join('&');
   var i = document.createElement("img");
   i.src = collectorUrl + '?' + errorString;
