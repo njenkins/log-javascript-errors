@@ -1,0 +1,17 @@
+{
+  "name": "clientside-error-tracker",
+  "version": "1.0.0",
+  "description": "Capture and report on client side errors",
+  "main": "tracker.js",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "Nathan Jenkins <web@nathanjenkins.com.au> (http://nathanjenkins.com.au/)",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1"
+  }
+}
