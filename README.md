@@ -1,4 +1,6 @@
 # Log Javascript Errors
+[![Build Status](https://travis-ci.org/njenkins/log-javascript-errors.svg?branch=master)](https://travis-ci.org/njenkins/log-javascript-errors)
+
 Capture javascript errors and log to a chosen endpoint.
 
 ## Download
