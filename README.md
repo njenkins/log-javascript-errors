@@ -30,7 +30,7 @@ The build task will generate a tracker.min.js file within the release directory.
 <script src="tracker.min.js"></script>
 ```
 
-### Interpreting errors
+## Interpreting errors
 When an errror occurs a GET request will be made to your tracking pixel with the below values as query parameters
 * Error Message
 * Filename where error originated
