@@ -12,4 +12,14 @@ if(!dnt){
     };
     utils.sendError(errorObject, configs.collectorUrl);
   });
+  //Attach listener to error load failures which do not bubble up to window.
+  if(configs.imageFailures){
+    window.addEventListener('DOMContentLoaded', function(){
+      var images = document.querySelectorAll('img');
+      for(var i = 0; i < images.length; i++){
+        utils.bindImgError(images[i], configs.collectorUrl);
+      }
+    });
+
+  }
 }

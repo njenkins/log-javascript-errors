@@ -38,3 +38,7 @@ When an errror occurs a GET request will be made to your tracking pixel with the
 * Column number where error occurred
 
 Use your favourite log parsing tool to extract these values.
+
+## Configuration Options
+* collectorUrl - URL to make GET request to
+* imageFailures - If true, an error will also be logged on any image src failure

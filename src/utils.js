@@ -11,6 +11,17 @@ function sendError(errorObject, collectorUrl){
   i.src = collectorUrl + '?' + errorString;
 }
 
+function bindImgError(image, collectorUrl){
+  image.addEventListener('error', function(e){
+    var errorObject = {
+      message: e.target.currentSrc,
+      filename: e.srcElement.baseURI
+    };
+    sendError(errorObject, collectorUrl);
+  });
+}
+
 module.exports = {
-  sendError: sendError
+  sendError: sendError,
+  bindImgError: bindImgError
 };
