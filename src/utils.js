@@ -13,7 +13,7 @@ function sendError(errorObject, collectorUrl){
 /**
 As image load errors do not bubble up to window, this method observes failures
 on any image resource
-@param {Object} The image to attach listener to
+@param {Object} image The image to attach listener to
 @param {String} collectorUrl url of the tracking pixel
 */
 function bindImgError(image, collectorUrl){
